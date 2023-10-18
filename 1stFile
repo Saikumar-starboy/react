@@ -1,19 +1,14 @@
-import { useState } from "react";
 
-import "./App.css";
+function expenseTracker (props) {
+    return (
+        <div>
+            <h1>Expense Tracker</h1>
+            <p>Food Rs 10</p>
+            <p>Petrol Rs 100</p>
+            <p>Movies Rs 200</p>
+            <p>{props.loc}</p>
+        </div>
+    );
+}
 
-function App() {
-	const [count, setCount] = useState(0);
-	const LocationOfExpenditure = "Hyderabad";
-
-	return (
-		<div>
-			<h1>Expense Tracker</h1>
-			<p>Food Rs 10</p>
-			<p>Petrol Rs 100</p>
-			<p>Movies Rs 200</p>
-			<p>{LocationOfExpenditure}</p>
-		</div>
-	);
-	}
-export default App;
+export default expenseTracker;
